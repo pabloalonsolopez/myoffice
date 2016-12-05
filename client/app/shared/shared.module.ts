@@ -4,18 +4,21 @@ import { FormsModule } from "@angular/forms"
 import { ReactiveFormsModule } from "@angular/forms"
 import { HttpModule } from "@angular/http"
 
+import { IconComponent } from "./icon/icon.component"
+
 @NgModule({
   imports: [
-    CommonModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpModule
+    CommonModule
+  ],
+  declarations: [
+    IconComponent
   ],
   exports: [
     CommonModule,
     FormsModule,
     ReactiveFormsModule,
-    HttpModule
+    HttpModule,
+    IconComponent
   ]
 })
 

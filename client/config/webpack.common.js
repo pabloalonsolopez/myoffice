@@ -37,7 +37,13 @@ module.exports = {
       },
       {
         test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|eot|ico)$/,
-        loader: 'file?name=assets/images/[name].[hash].[ext]'
+        loader: 'file?name=assets/images/[name].[hash].[ext]',
+        exclude: helpers.root("client", "assets", "images", "icons")
+      },
+      {
+        test: /\.svg?$/,
+        loader: 'svg-sprite!svgo',
+        include: helpers.root("client", "assets", "images", "icons")
       }
     ]
   },
@@ -60,7 +66,7 @@ module.exports = {
   ],
 
   output: {
-    path: helpers.root("dist/client"),
+    path: helpers.root("dist", "client"),
     publicPath: "/",
     filename: "app/[name].[hash].js",
     chunkFilename: "app/[id].[hash].chunk.js"

@@ -1,8 +1,10 @@
-<div class="bg(purple)">
+<div class="bgc(purple)">
     <div class="d(flex) ai(center) maxw(xl) m(0-auto) px(20px) py(15px)">
-        <a class="mr(20px) pr(20px) bri(1) bc(purple1) td(none) c(purple4) c-hover(purple6) t(all)" routerLink="home"><span class="icon icon-logo"></span></a>
-        <a class="td(none) f(1.3rem) c(purple4) c-hover(purple6) c-active(purple6) t(all)" routerLink="home" routerLinkActive="is-active">Home</a>
-        <a class="ml(40px) td(none) f(1.3rem) c(purple4) c-hover(purple6) c-active(purple6) t(all)" routerLink="invoices" routerLinkActive="is-active">Invoices</a>
+        <a class="mr(20px) br(1) bc(purple1) td(none) fill(purple4) fill-hover(purple6) t(all)" routerLink="home">
+            <mo-icon class="w(24px) h(24px) mr(20px)" icon="logo"></mo-icon>
+        </a>
+        <a class="td(none) fs(1.3rem) c(purple4) c-hover(purple6) c-active(purple6) t(all)" routerLink="home" routerLinkActive="is-active">Home</a>
+        <a class="ml(40px) td(none) fs(1.3rem) c(purple4) c-hover(purple6) c-active(purple6) t(all)" routerLink="invoices" routerLinkActive="is-active">Invoices</a>
     </div>
 </div>
 <router-outlet></router-outlet>
