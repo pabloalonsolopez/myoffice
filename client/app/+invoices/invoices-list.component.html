@@ -1,0 +1,7 @@
+<h3>Todos List</h3>
+<ul>
+  <li *ngFor="let invoice of invoices">
+    <a routerLink="{{invoice._id}}">{{invoice._id}}</a>
+    {{invoice.name}}
+  </li>
+</ul>

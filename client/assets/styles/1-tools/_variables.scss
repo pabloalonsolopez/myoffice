@@ -1,0 +1,294 @@
+$breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
+
+$black: #434C5F;
+$black1: lighten($black, 11%);
+$black2: lighten($black, 22%);
+$black3: lighten($black, 33%);
+$black4: lighten($black, 44%);
+$black5: lighten($black, 55%);
+$black6: lighten($black, 66%);
+$black7: lighten($black, 69%);
+$purple: #5437BF;
+$purple1: lighten($purple, 5%);
+$purple2: lighten($purple, 17%);
+$purple3: lighten($purple, 24%);
+$purple4: lighten($purple, 31%);
+$purple5: lighten($purple, 38%);
+$purple6: lighten($purple, 45%);
+$purple7: lighten($purple, 52%);
+$red: #FF3366;
+$red1: lighten($red, 10%);
+$red2: lighten($red, 15%);
+$red3: lighten($red, 20%);
+$red4: lighten($red, 25%);
+$red5: lighten($red, 30%);
+$red6: lighten($red, 35%);
+$red7: lighten($red, 40%);
+
+$colors: (
+  transparent: transparent,
+  black: $black,
+  black1: $black1,
+  black2: $black2,
+  black3: $black3,
+  black4: $black4,
+  black5: $black5,
+  black6: $black6,
+  black7: $black7,
+  purple: $purple,
+  purple1: $purple1,
+  purple2: $purple2,
+  purple3: $purple3,
+  purple4: $purple4,
+  purple5: $purple5,
+  purple6: $purple6,
+  purple7: $purple7,
+  red: $red,
+  red1: $red1,
+  red2: $red2,
+  red3: $red3,
+  red4: $red4,
+  red5: $red5,
+  red6: $red6,
+  red7: $red7
+);
+
+$cursors: (
+  pointer: pointer
+);
+
+$borders: (
+  1: (1px solid),
+  2: (2px solid)
+);
+
+$border-radiuses: (
+  2px: 2px,
+  3px: 3px,
+  20px: 20px,
+  100%: 100%
+);
+
+$box-shadows: (
+  1: (0 1px 2px rgba(43, 59, 93, .29)),
+  2: (0 1px 2px rgba(43, 59, 93, .29), 0 0 13px rgba(43, 59, 93, .29)),
+  3: (0 0 1px rgba(76, 86, 103, .25), 0 2px 18px rgba(31, 37, 50, .32)),
+  4: (0 3px 15px 0 rgba(0, 0, 0, .25))
+);
+
+$coordinates: (
+  0: 0
+);
+
+$displays: (
+  none: none,
+  block: block,
+  inline-block: inline-block,
+  flex: flex,
+  inline-flex: inline-flex
+);
+
+$flex-alignments: (
+  flex-start: flex-start,
+  center: center,
+  flex-end: flex-end
+);
+
+$flex-directions: (
+  column: column
+);
+
+$flex-types: (
+  0: 0,
+  1: 1,
+  "0-0-460px": (0 0 460px)
+);
+
+$flex-wraps: (
+  wrap: wrap
+);
+
+$font-sizes: (
+  1rem: 1rem,
+  1.1rem: 1.1rem,
+  1.2rem: 1.2rem,
+  1.3rem: 1.3rem,
+  1.4rem: 1.4rem,
+  1.6rem: 1.6rem,
+  1.8rem: 1.8rem,
+  2rem: 2rem,
+  2.2rem: 2.2rem,
+  2.3rem: 2.3rem,
+  2.8rem: 2.8rem,
+  3.2rem: 3.2rem,
+  4rem: 4rem,
+  4.5rem: 4.5rem
+);
+
+$font-styles: (
+  normal: normal,
+  italic: italic
+);
+
+$font-weights: (
+  300: 300,
+  400: 400,
+  600: 600,
+  700: 700
+);
+
+$heights: (
+  100vh: 100vh,
+  400px: 400px,
+  130px: 130px,
+  90px: 90px,
+  80px: 80px,
+  56px: 56px,
+  40px: 40px,
+  41px: 41px,
+  29px: 29px
+);
+
+$letter-spacings: (
+  0.1rem: 0.1rem,
+  0.2rem: 0.2rem
+);
+
+$line-heights: (
+  1: 1,
+  1.25: 1.25,
+  1.5: 1.5,
+  1.8: 1.8
+);
+
+$max-widths: (
+  620px: 620px,
+  880px: 880px,
+  xl: 1200px,
+  50%: 50%
+);
+
+$opacities: (
+  0.9: 0.9,
+  0.7: 0.7
+);
+
+$positions: (
+  relative: relative,
+  absolute: absolute
+);
+
+$spacings: (
+  auto: auto,
+  "0-auto": (0 auto),
+  5px: 5px,
+  7px: 7px,
+  8px: 8px,
+  -10px: -10px,
+  10px: 10px,
+  14px: 14px,
+  15px: 15px,
+  20px: 20px,
+  25px: 25px,
+  30px: 30px,
+  35px: 35px,
+  40px: 40px,
+  45px: 45px,
+  50px: 50px,
+  60px: 60px,
+  80px: 80px,
+  90px: 90px
+);
+
+$text-alignments: (
+  left: left,
+  center: center,
+  right: right
+);
+
+$text-decorations: (
+  none: none
+);
+
+$text-transformations: (
+  uppercase: uppercase
+);
+
+$transitions: (
+  all: (all .15s ease-in)
+);
+
+$widths: (
+  100%: 100%,
+  50%: 50%,
+  "1-3": percentage(1/3),
+  25%: 25%,
+  400px: 400px,
+  130px: 130px,
+  90px: 90px,
+  80px: 80px,
+  56px: 56px,
+  40px: 40px
+);
+
+$dictionary: (
+  (ai,        align-items,                    $flex-alignments,       null,          (xs, sm, md, lg, xl)),
+  (b,         border,                         $borders,               null,          (xs, sm, md, lg, xl)),
+  (bb,        border-bottom,                  $borders,               null,          (xs, sm, md, lg, xl)),
+  (bt,        border-top,                     $borders,               null,          (xs, sm, md, lg, xl)),
+  (bri,       border-right,                   $borders,               null,          (xs, sm, md, lg, xl)),
+  (bc,        border-color,                   $colors,                null,          (xs, sm, md, lg, xl)),
+  (bc-hover,  border-color,                   $colors,                ":hover",      (xs, sm, md, lg, xl)),
+  (bc-active, border-color,                   $colors,                ".is-active",  (xs, sm, md, lg, xl)),
+  (bc-focus,  border-color,                   $colors,                ":focus",      (xs, sm, md, lg, xl)),
+  (bs,        box-shadow,                     $box-shadows,           null,          (xs, sm, md, lg, xl)),
+  (bs-hover,  box-shadow,                     $box-shadows,           ":hover",      (xs, sm, md, lg, xl)),
+  (bg,        background-color,               $colors,                null,          (xs, sm, md, lg, xl)),
+  (bg-hover,  background-color,               $colors,                ":hover",      (xs, sm, md, lg, xl)),
+  (br,        border-radius,                  $border-radiuses,       null,          (xs, sm, md, lg, xl)),
+  (bottom,    bottom,                         $coordinates,           null,          (xs, sm, md, lg, xl)),
+  (c,         color,                          $colors,                null,          (xs, sm, md, lg, xl)),
+  (c-hover,   color,                          $colors,                ":hover",      (xs, sm, md, lg, xl)),
+  (c-active,  color,                          $colors,                ".is-active",  (xs, sm, md, lg, xl)),
+  (c-placeholder,  color,                          $colors,                "::placeholder",  (xs, sm, md, lg, xl)),
+  (c-focus-placeholder,  color,                          $colors,                ":focus::placeholder",  (xs, sm, md, lg, xl)),
+  (cu,        cursor,                         $cursors,               null,          (xs, sm, md, lg, xl)),
+  (d,         display,                        $displays,              null,          (xs, sm, md, lg, xl)),
+  (flex,      flex,                           $flex-types,            null,          (xs, sm, md, lg, xl)),
+  (f,         font-size,                      $font-sizes,            null,          (xs, sm, md, lg, xl)),
+  (fd,        flex-direction,                 $flex-directions,       null,          (xs, sm, md, lg, xl)),
+  (fs,        font-style,                     $font-styles,           null,          (xs, sm, md, lg, xl)),
+  (fw,        font-weight,                    $font-weights,          null,          (xs, sm, md, lg, xl)),
+  (fwrap,     flex-wrap,                      $flex-wraps,            null,          (xs, sm, md, lg, xl)),
+  (h,         height,                         $heights,               null,          (xs, sm, md, lg, xl)),
+  (jc,        justify-content,                $flex-alignments,       null,          (xs, sm, md, lg, xl)),
+  (left,      left,                           $coordinates,           null,          (xs, sm, md, lg, xl)),
+  (ls,        letter-spacing,                 $letter-spacings,       null,          (xs, sm, md, lg, xl)),
+  (lh,        line-height,                    $line-heights,          null,          (xs, sm, md, lg, xl)),
+  (m,         margin,                         $spacings,              null,          (xs, sm, md, lg, xl)),
+  (mb,        margin-bottom,                  $spacings,              null,          (xs, sm, md, lg, xl)),
+  (ml,        margin-left,                    $spacings,              null,          (xs, sm, md, lg, xl)),
+  (mr,        margin-right,                   $spacings,              null,          (xs, sm, md, lg, xl)),
+  (mt,        margin-top,                     $spacings,              null,          (xs, sm, md, lg, xl)),
+  (maxw,      max-width,                      $max-widths,            null,          (xs, sm, md, lg, xl)),
+  (mx,        (margin-left, margin-right),    $spacings,              null,          (xs, sm, md, lg, xl)),
+  (my,        (margin-top, margin-bottom),    $spacings,              null,          (xs, sm, md, lg, xl)),
+  (o,         opacity,                        $opacities,             null,          (xs, sm, md, lg, xl)),
+  (p,         padding,                        $spacings,              null,          (xs, sm, md, lg, xl)),
+  (pos,       position,                       $positions,             null,          (xs, sm, md, lg, xl)),
+  (pb,        padding-bottom,                 $spacings,              null,          (xs, sm, md, lg, xl)),
+  (pl,        padding-left,                   $spacings,              null,          (xs, sm, md, lg, xl)),
+  (pr,        padding-right,                  $spacings,              null,          (xs, sm, md, lg, xl)),
+  (pt,        padding-top,                    $spacings,              null,          (xs, sm, md, lg, xl)),
+  (px,        (padding-left, padding-right),  $spacings,              null,          (xs, sm, md, lg, xl)),
+  (py,        (padding-top, padding-bottom),  $spacings,              null,          (xs, sm, md, lg, xl)),
+  (right,     right,                          $coordinates,           null,          (xs, sm, md, lg, xl)),
+  (top,       top,                            $coordinates,           null,          (xs, sm, md, lg, xl)),
+  (t,         transition,                     $transitions,           null,          (xs, sm, md, lg, xl)),
+  (t-placeholder,         transition,                     $transitions,           "::placeholder",          (xs, sm, md, lg, xl)),
+  (ta,        text-align,                     $text-alignments,       null,          (xs, sm, md, lg, xl)),
+  (td,        text-decoration,                $text-decorations,      null,          (xs, sm, md, lg, xl)),
+  (td-hover,  text-decoration,                $text-decorations,      ":hover",      (xs, sm, md, lg, xl)),
+  (tt,        text-transform,                 $text-transformations,  null,          (xs, sm, md, lg, xl)),
+  (w,         width,                          $widths,                null,          (xs, sm, md, lg, xl))
+);
