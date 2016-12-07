@@ -1,7 +1,5 @@
-//Breakpoints
 $breakpoints: (xs: 0, sm: 576px, md: 768px, lg: 992px, xl: 1200px);
 
-//Colors
 $black: #434C5F;
 $black1: lighten($black, 11%);
 $black2: lighten($black, 22%);
@@ -55,6 +53,10 @@ $colors: (
   red7: $red7
 );
 
+$borders: (
+  1: (1px solid)
+);
+
 $displays: (
   flex: flex
 );
@@ -64,51 +66,67 @@ $flex-alignments: (
 );
 
 $font-sizes: (
-  1.3rem: 1.3rem
+  1.3rem: 1.3rem,
+  3.2rem: 3.2rem
+);
+
+$font-weights: (
+  300: 300,
+  400: 400
+);
+
+$line-heights: (
+  1: 1,
+  1.25: 1.25
 );
 
 $spacings: (
+  auto: auto,
   0-auto: (0 auto),
+  10px: 10px,
   15px: 15px,
   20px: 20px,
+  25px: 25px,
   24px: 24px,
+  30px: 30px,
   40px: 40px,
+  60px: 60px,
   xl: map-get($breakpoints, xl)
-);
-
-$borders: (
-  1: (1px solid)
 );
 
 $text-decorations: (
   none: none
 );
 
+$transitions: (
+  all: (all .15s ease-in)
+);
+
 $dictionary: (
   (ai,                                align-items,                    $flex-alignments,       null,                                (xs, sm, md, lg, xl)),
-  (bc,                                border-color,                   $colors,                null,                                (xs, sm, md, lg, xl)),
-  (bc-hover,                          border-color,                   $colors,                ":hover",                            (xs, sm, md, lg, xl)),
-  (bc-active,                         border-color,                   $colors,                ".is-active",                        (xs, sm, md, lg, xl)),
-  (bc-focus,                          border-color,                   $colors,                ":focus",                            (xs, sm, md, lg, xl)),
   (bgc,                               background-color,               $colors,                null,                                (xs, sm, md, lg, xl)),
-  (bgc-hover,                         background-color,               $colors,                ":hover",                            (xs, sm, md, lg, xl)),
   (br,                                border-right,                   $borders,               null,                                (xs, sm, md, lg, xl)),
+  (bc,                                border-color,                   $colors,                null,                                (xs, sm, md, lg, xl)),
   (c,                                 color,                          $colors,                null,                                (xs, sm, md, lg, xl)),
   (c-hover,                           color,                          $colors,                ":hover",                            (xs, sm, md, lg, xl)),
   (c-active,                          color,                          $colors,                ".is-active",                        (xs, sm, md, lg, xl)),
-  (c-placeholder,                     color,                          $colors,                "::placeholder",                     (xs, sm, md, lg, xl)),
-  (c-focus-placeholder,               color,                          $colors,                ":focus::placeholder",               (xs, sm, md, lg, xl)),
   (d,                                 display,                        $displays,              null,                                (xs, sm, md, lg, xl)),
   (fill,                              fill,                           $colors,                null,                                (xs, sm, md, lg, xl)),
   (fill-hover,                        fill,                           $colors,                ":hover",                            (xs, sm, md, lg, xl)),
   (fs,                                font-size,                      $font-sizes,            null,                                (xs, sm, md, lg, xl)),
+  (fw,                                font-weight,                    $font-weights,          null,                                (xs, sm, md, lg, xl)),
   (h,                                 height,                         $spacings,              null,                                (xs, sm, md, lg, xl)),
+  (lh,                                line-height,                    $line-heights,          null,                                (xs, sm, md, lg, xl)),
   (m,                                 margin,                         $spacings,              null,                                (xs, sm, md, lg, xl)),
   (maxw,                              max-width,                      $spacings,              null,                                (xs, sm, md, lg, xl)),
   (ml,                                margin-left,                    $spacings,              null,                                (xs, sm, md, lg, xl)),
   (mr,                                margin-right,                   $spacings,              null,                                (xs, sm, md, lg, xl)),
+  (p,                                 padding,                        $spacings,              null,                                (xs, sm, md, lg, xl)),
+  (pb,                                padding-bottom,                 $spacings,              null,                                (xs, sm, md, lg, xl)),
+  (pt,                                padding-top,                    $spacings,              null,                                (xs, sm, md, lg, xl)),
   (px,                                (padding-left, padding-right),  $spacings,              null,                                (xs, sm, md, lg, xl)),
   (py,                                (padding-top, padding-bottom),  $spacings,              null,                                (xs, sm, md, lg, xl)),
+  (t,                                 transition,                     $transitions,           null,                                (xs, sm, md, lg, xl)),
   (td,                                text-decoration,                $text-decorations,      null,                                (xs, sm, md, lg, xl)),
   (w,                                 width,                          $spacings,              null,                                (xs, sm, md, lg, xl))
 );

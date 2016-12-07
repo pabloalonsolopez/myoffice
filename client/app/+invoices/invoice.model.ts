@@ -1,4 +1,6 @@
 export class Invoice {
   _id: string
-  name: string
+  invoice_id: string
+  subject: string
+  amount: number
 }

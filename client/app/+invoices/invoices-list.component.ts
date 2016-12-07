@@ -20,7 +20,7 @@ export class InvoicesListComponent implements OnInit {
   ngOnInit(): void {
     this.invoicesService.getInvoices()
       .subscribe(
-        invoices => this.invoices = invoices,
+        invoices => this.invoices = [{_id: "1", invoice_id: "8712638123", subject: "Campaña electoral", amount: 14.7}, {_id: "2", invoice_id: "8712638124", subject: "Campaña electoral navidad", amount: 140.7}],
         error => this.error = error
       )
   }

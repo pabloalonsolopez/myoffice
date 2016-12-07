@@ -1,7 +1,10 @@
-<h3>Todos List</h3>
-<ul>
-  <li *ngFor="let invoice of invoices">
-    <a routerLink="{{invoice._id}}">{{invoice._id}}</a>
-    {{invoice.name}}
-  </li>
-</ul>
+<div class="maxw(xl) m(0-auto) px(20px) py(60px)">
+  <p>Nº Factura</p>
+  <p>Concepto</p>
+  <p>Importe</p>
+  <a routerLink="{{invoice._id}}" *ngFor="let invoice of invoices">
+    <p>{{invoice.invoice_id}}</p>
+    <p>{{invoice.subject}}</p>
+    <p>{{invoice.amount}}</p>
+  </a>
+</div>
