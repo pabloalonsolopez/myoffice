@@ -53,8 +53,20 @@ $colors: (
   red7: $red7
 );
 
+$cursors: (
+  pointer: pointer
+);
+
 $borders: (
   1: (1px solid)
+);
+
+$border-collapses: (
+  collapse: collapse
+);
+
+$border-radiuses: (
+  3px: 3px
 );
 
 $displays: (
@@ -66,13 +78,19 @@ $flex-alignments: (
 );
 
 $font-sizes: (
+  1.1rem: 1.1rem,
   1.3rem: 1.3rem,
   3.2rem: 3.2rem
 );
 
 $font-weights: (
   300: 300,
-  400: 400
+  400: 400,
+  600: 600
+);
+
+$letter-spacings: (
+  0.1rem: 0.2rem
 );
 
 $line-heights: (
@@ -91,11 +109,21 @@ $spacings: (
   30px: 30px,
   40px: 40px,
   60px: 60px,
-  xl: map-get($breakpoints, xl)
+  xl: map-get($breakpoints, xl),
+  100%: 100%
+);
+
+$text-alignments: (
+  left: left,
+  right: right
 );
 
 $text-decorations: (
   none: none
+);
+
+$text-transformations: (
+  uppercase: uppercase
 );
 
 $transitions: (
@@ -104,21 +132,28 @@ $transitions: (
 
 $dictionary: (
   (ai,                                align-items,                    $flex-alignments,       null,                                (xs, sm, md, lg, xl)),
+  (bb,                                border-bottom,                  $borders,               null,                                (xs, sm, md, lg, xl)),
   (bgc,                               background-color,               $colors,                null,                                (xs, sm, md, lg, xl)),
+  (bgc-hover,                         background-color,               $colors,                ":hover",                            (xs, sm, md, lg, xl)),
   (br,                                border-right,                   $borders,               null,                                (xs, sm, md, lg, xl)),
+  (bra,                               border-radius,                  $border-radiuses,       null,                                (xs, sm, md, lg, xl)),
   (bc,                                border-color,                   $colors,                null,                                (xs, sm, md, lg, xl)),
+  (bco,                               border-collapse,                $border-collapses,      null,                                (xs, sm, md, lg, xl)),
   (c,                                 color,                          $colors,                null,                                (xs, sm, md, lg, xl)),
   (c-hover,                           color,                          $colors,                ":hover",                            (xs, sm, md, lg, xl)),
   (c-active,                          color,                          $colors,                ".is-active",                        (xs, sm, md, lg, xl)),
+  (cu,                                cursor,                         $cursors,               null,                                (xs, sm, md, lg, xl)),
   (d,                                 display,                        $displays,              null,                                (xs, sm, md, lg, xl)),
   (fill,                              fill,                           $colors,                null,                                (xs, sm, md, lg, xl)),
   (fill-hover,                        fill,                           $colors,                ":hover",                            (xs, sm, md, lg, xl)),
   (fs,                                font-size,                      $font-sizes,            null,                                (xs, sm, md, lg, xl)),
   (fw,                                font-weight,                    $font-weights,          null,                                (xs, sm, md, lg, xl)),
   (h,                                 height,                         $spacings,              null,                                (xs, sm, md, lg, xl)),
+  (ls,                                letter-spacing,                 $letter-spacings,       null,                                (xs, sm, md, lg, xl)),
   (lh,                                line-height,                    $line-heights,          null,                                (xs, sm, md, lg, xl)),
   (m,                                 margin,                         $spacings,              null,                                (xs, sm, md, lg, xl)),
   (maxw,                              max-width,                      $spacings,              null,                                (xs, sm, md, lg, xl)),
+  (mb,                                margin-bottom,                  $spacings,              null,                                (xs, sm, md, lg, xl)),
   (ml,                                margin-left,                    $spacings,              null,                                (xs, sm, md, lg, xl)),
   (mr,                                margin-right,                   $spacings,              null,                                (xs, sm, md, lg, xl)),
   (p,                                 padding,                        $spacings,              null,                                (xs, sm, md, lg, xl)),
@@ -127,6 +162,8 @@ $dictionary: (
   (px,                                (padding-left, padding-right),  $spacings,              null,                                (xs, sm, md, lg, xl)),
   (py,                                (padding-top, padding-bottom),  $spacings,              null,                                (xs, sm, md, lg, xl)),
   (t,                                 transition,                     $transitions,           null,                                (xs, sm, md, lg, xl)),
+  (ta,                                text-align,                     $text-alignments,       null,                                (xs, sm, md, lg, xl)),
+  (tt,                                text-transform,                 $text-transformations,  null,                                (xs, sm, md, lg, xl)),
   (td,                                text-decoration,                $text-decorations,      null,                                (xs, sm, md, lg, xl)),
   (w,                                 width,                          $spacings,              null,                                (xs, sm, md, lg, xl))
 );

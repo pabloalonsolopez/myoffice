@@ -1,2 +1,8 @@
-<h3>Todo New</h3>
-<a routerLink="../">Back</a>
+<div class="bgc(purple) pb(40px) pt(15px)">
+    <div class="d(flex) ai(center) maxw(xl) m(0-auto) px(20px)">
+        <h1 class="fw(300) fs(3.2rem) c(purple7)">Nueva Factura</h1>
+    </div>
+</div>
+<div class="maxw(xl) m(0-auto) px(20px) py(60px)">
+    <mo-invoice-form [invoice]="invoice" (onSubmit)="createInvoice($event)"></mo-invoice-form>
+</div>

@@ -1,7 +1,11 @@
 import { Schema, model } from "mongoose"
 
 const InvoiceSchema = new Schema({
-  name: String
+  invoice_id: String,
+  provider: String,
+  subject: String,
+  amount: Number,
+  status: String
 })
 
 const Invoice = model("Invoice", InvoiceSchema)

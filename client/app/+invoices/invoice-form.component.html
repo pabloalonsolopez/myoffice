@@ -1,10 +1,29 @@
-<h4>Todo Form</h4>
-<form [formGroup]="todoForm" (ngSubmit)="onSubmit.emit(todoForm.value)">
+<form [formGroup]="invoiceForm" (ngSubmit)="onSubmit.emit(invoiceForm.value)">
   <input type="hidden" id="_id" formControlName="_id"/>
   <div>
-    <label for="name"></label>
-    <input type="text" id="name" placeholder="Name" formControlName="name"/>
-    <p *ngIf="formErrors.name">{{formErrors.name}}</p>
+    <label for="invoice_id">Nº Factura</label>
+    <input type="text" id="invoice_id" placeholder="Nº Factura" formControlName="invoice_id"/>
+    <p *ngIf="formErrors.invoice_id">{{formErrors.invoice_id}}</p>
   </div>
-  <input type="submit" value="Submit" [disabled]="!todoForm.valid"/>
+  <div>
+    <label for="provider">Proveedor</label>
+    <input type="text" id="provider" placeholder="Proveedor" formControlName="provider"/>
+    <p *ngIf="formErrors.provider">{{formErrors.provider}}</p>
+  </div>
+  <div>
+    <label for="subject">Concepto</label>
+    <input type="text" id="subject" placeholder="Concepto" formControlName="subject"/>
+    <p *ngIf="formErrors.subject">{{formErrors.subject}}</p>
+  </div>
+  <div>
+    <label for="amount">Importe</label>
+    <input type="text" id="amount" placeholder="Importe" formControlName="amount"/>
+    <p *ngIf="formErrors.amount">{{formErrors.amount}}</p>
+  </div>
+  <div>
+    <label for="status">Estado</label>
+    <input type="text" id="status" placeholder="Estado" formControlName="status"/>
+    <p *ngIf="formErrors.status">{{formErrors.status}}</p>
+  </div>
+  <input type="submit" value="Submit" [disabled]="!invoiceForm.valid"/>
 </form>
