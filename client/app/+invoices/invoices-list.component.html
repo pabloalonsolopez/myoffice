@@ -1,10 +1,10 @@
-<div class="bgc(purple) pb(40px) pt(15px)">
+<div class="bgc(ebony-clay) pb(40px) pt(15px)">
     <div class="d(flex) ai(center) maxw(xl) m(0-auto) px(20px)">
         <div>
-            <h1 class="fw(300) fs(3.2rem) c(purple7)">Facturas</h1>
+            <h1 class="fw(300) fs(3.2rem) c(white)">Facturas</h1>
         </div>
         <div class="ml(auto)">
-            <a class="bra(3px) px(20px) py(10px) bgc(red) bgc-hover(red1) td(none) fw(600) fs(1.1rem) c(red7) tt(uppercase) ls(0.1rem) t(all)" routerLink="new">Crear Factura</a>
+            <a class="bra(2px) px(20px) py(10px) bgc(radical-red-light) bgc-hover(radical-red) td(none) fw(600) fs(1.1rem) c(white) tt(uppercase) ls(0.1rem) t(all) cu(pointer)" routerLink="new">Crear Factura</a>
         </div>
     </div>
 </div>
@@ -12,20 +12,20 @@
   <table class="w(100%) bco(collapse)">
     <thead>
       <tr>
-        <th class="bb(1) px(15px) pb(10px) bc(black5) ta(left) fw(600) fs(1.3rem) c(black3) tt(uppercase)">Nº Factura</th>
-        <th class="bb(1) px(15px) pb(10px) bc(black5) ta(left) fw(600) fs(1.3rem) c(black3) tt(uppercase)">Proveedor</th>
-        <th class="bb(1) px(15px) pb(10px) bc(black5) ta(left) fw(600) fs(1.3rem) c(black3) tt(uppercase)">Concepto</th>
-        <th class="bb(1) px(15px) pb(10px) bc(black5) ta(right) fw(600) fs(1.3rem) c(black3) tt(uppercase)">Importe</th>
-        <th class="bb(1) px(15px) pb(10px) bc(black5) ta(left) fw(600) fs(1.3rem) c(black3) tt(uppercase)">Estado</th>
+        <th class="bb(1) bc(porcelain) px(15px) pb(10px) ta(left) fw(600) fs(1.3rem) tt(uppercase)">Nº Factura</th>
+        <th class="bb(1) bc(porcelain) px(15px) pb(10px) ta(left) fw(600) fs(1.3rem) tt(uppercase)">Proveedor</th>
+        <th class="bb(1) bc(porcelain) px(15px) pb(10px) ta(left) fw(600) fs(1.3rem) tt(uppercase)">Concepto</th>
+        <th class="bb(1) bc(porcelain) px(15px) pb(10px) ta(right) fw(600) fs(1.3rem) tt(uppercase)">Importe</th>
+        <th class="bb(1) bc(porcelain) px(15px) pb(10px) ta(left) fw(600) fs(1.3rem) tt(uppercase)">Estado</th>
       </tr>
     </thead>
     <tbody>
-      <tr class="bgc-hover(black7) t(all)" routerLink="{{invoice._id}}" *ngFor="let invoice of invoices">
-        <td class="p(15px) bb(1) bc(black5)">{{invoice.invoice_id}}</td>
-        <td class="p(15px) bb(1) bc(black5)">{{invoice.provider}}</td>
-        <td class="p(15px) bb(1) bc(black5)">{{invoice.subject}}</td>
-        <td class="p(15px) bb(1) bc(black5) ta(right)">{{invoice.amount}}€</td>
-        <td class="p(15px) bb(1) bc(black5)">{{invoice.status}}</td>
+      <tr routerLink="{{invoice._id}}" *ngFor="let invoice of invoices">
+        <td class="p(15px) bb(1) bc(porcelain)">{{invoice.invoice_id}}</td>
+        <td class="p(15px) bb(1) bc(porcelain)">{{invoice.provider}}</td>
+        <td class="p(15px) bb(1) bc(porcelain)">{{invoice.subject}}</td>
+        <td class="p(15px) bb(1) bc(porcelain) ta(right)">{{invoice.amount}}€</td>
+        <td class="p(15px) bb(1) bc(porcelain)">{{invoice.status}}</td>
       </tr>
     </tbody>
   </table>

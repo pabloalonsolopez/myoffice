@@ -1,8 +1,8 @@
-@import "0-vendors/normalize";
+@import "vendors/normalize";
 
-@import "1-tools/variables";
-@import "1-tools/framework";
+@import "tools/variables";
+@import "tools/framework";
 
-@import "2-globals/base";
+@import "base";
 
-@import "3-components/icon";
+@import "components/icon";
