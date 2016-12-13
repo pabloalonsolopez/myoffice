@@ -11,7 +11,7 @@ export class InvoicesService {
   private invoicesUrl = "api/invoices"
   private options = new RequestOptions({ headers: new Headers({ "Content-Type": "application/json" }) })
 
-  constructor(private http: Http) { }
+  constructor(private http: Http) {}
 
   getInvoices(): Observable<Invoice[]> {
     return this.http.get(this.invoicesUrl)

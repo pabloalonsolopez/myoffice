@@ -10,7 +10,7 @@ export class ModalService {
   private injector: Injector
   public activeInstances: number = 0
 
-  constructor(private compiler: Compiler) { }
+  constructor(private compiler: Compiler) {}
 
   registerViewContainerRef(vcRef: ViewContainerRef): void {
     this.vcRef = vcRef

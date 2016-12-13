@@ -40,7 +40,7 @@ export class InvoiceFormComponent implements OnInit {
     }
   }
   
-  constructor(private formBuilder: FormBuilder) { }
+  constructor(private formBuilder: FormBuilder) {}
 
   ngOnInit(): void {
     this.buildForm()

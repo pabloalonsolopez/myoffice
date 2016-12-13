@@ -11,7 +11,7 @@ export class ModalPlaceholderComponent implements OnInit {
     
   @ViewChild("modalplaceholder", { read: ViewContainerRef }) viewContainerRef: ViewContainerRef
 
-  constructor(private modalService: ModalService, private injector: Injector) { }
+  constructor(private modalService: ModalService, private injector: Injector) {}
   
   ngOnInit(): void {
       this.modalService.registerViewContainerRef(this.viewContainerRef)

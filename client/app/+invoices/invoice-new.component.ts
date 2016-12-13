@@ -1,20 +1,26 @@
 import { Component, OnInit } from "@angular/core"
 import { Router } from "@angular/router"
 
+import { Modal } from "../core/modal/modal.module"
+
 import { Invoice } from "./invoice.model"
 import { InvoicesService } from "./invoices.service"
 
 @Component({
   selector: "mo-invoice-new",
-  templateUrl: "./invoice-new.component.html"
+  templateUrl: "./invoice-new.component.html",
+  providers: [
+    InvoicesService
+  ]
 })
 
+@Modal()
 export class InvoiceNewComponent implements OnInit {
 
   invoice: Invoice
   error: any
 
-  constructor(private router: Router, private invoicesService: InvoicesService) { }
+  constructor(private router: Router, private invoicesService: InvoicesService) {}
 
   ngOnInit(): void {
     this.invoice = new Invoice()

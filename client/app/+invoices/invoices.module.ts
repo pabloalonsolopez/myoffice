@@ -31,4 +31,4 @@ import { InvoicesService } from "./invoices.service"
   ]
 })
 
-export class InvoicesModule { }
+export class InvoicesModule {}

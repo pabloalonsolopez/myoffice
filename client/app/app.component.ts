@@ -7,4 +7,4 @@ import "../assets/styles/styles.scss"
   templateUrl: "./app.component.html"
 })
 
-export class AppComponent { }
+export class AppComponent {}

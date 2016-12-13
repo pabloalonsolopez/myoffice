@@ -22,4 +22,4 @@ import { IconComponent } from "./icon/icon.component"
   ]
 })
 
-export class SharedModule { }
+export class SharedModule {}

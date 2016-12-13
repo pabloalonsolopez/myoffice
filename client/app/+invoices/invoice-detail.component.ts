@@ -14,7 +14,7 @@ export class InvoiceDetailComponent implements OnInit {
   invoice: Invoice
   error: any
 
-  constructor(private route: ActivatedRoute, private router: Router, private invoicesService: InvoicesService) { }
+  constructor(private route: ActivatedRoute, private router: Router, private invoicesService: InvoicesService) {}
 
   ngOnInit(): void {
     this.route.params.subscribe(
